@@ -15,6 +15,7 @@
 .mpv/filters/
 .mpv/input.conf
 .mpv/scripts/
+.mpv/watch_later/
 .mpv/shaders
 .oh-my-zsh/
 .pentadactyl/
