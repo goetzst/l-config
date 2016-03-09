@@ -33,7 +33,7 @@ import Control.Monad.Error.Class (MonadError)
 main = do
     spawn "~/.startup"
     xmproc <-	spawnPipe "xmobar"
-    xmonad $ withUrgencyHook (NoUrgencyHook)
+    xmonad $ withUrgencyHook NoUrgencyHook
            $ fullscreenFix
            $ defaultConfig {
         --fix java.Swing bug
@@ -47,7 +47,7 @@ main = do
           spawn "teamSpeak3"
           setWMName "LG3D",
         manageHook          = manageFloats <+> manageDocks <+> manageHook defaultConfig,
-        layoutHook          = smartBorders $ avoidStruts $ myLayout,
+        layoutHook          = smartBorders $ avoidStruts myLayout,
         handleEventHook     = fullscreenEventHook <+> docksEventHook,
         logHook             = dynamicLogWithPP xmobarPP {
             ppOutput  = hPutStrLn xmproc,
@@ -147,7 +147,7 @@ moveDown' (W.Stack f us (d:ds))     = W.Stack d (f:us) ds -- rest is moved
 
 moveRight = W.modify' moveRight'
 moveRight' (W.Stack m [] (d:ds))    = W.Stack d [m] ds -- master, move focus to top
-moveRight' s@(W.Stack _ _ _)        = s -- only one window or not master
+moveRight' s@W.Stack{}              = s -- only one window or not master
 
 switchWorkspace' d = wsBy' d >>= windows . W.greedyView
 wsBy' = findWorkspace getSortByIndex Next HiddenNonEmptyWS
