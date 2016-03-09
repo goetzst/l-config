@@ -30,6 +30,9 @@ set expandtab
 set incsearch
 set modeline
 
+" folds look hoorible in current colorscheme
+set nofoldenable
+
 " nice linewrapping
 set linebreak
 
