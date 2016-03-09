@@ -32,6 +32,7 @@
 .xmonad/xmonad.o
 .xmonad/xmonadSave.hs
 .zcompdump
+.stack/
 Documents/
 Downloads/
 Pictures/
