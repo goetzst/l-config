@@ -20,7 +20,6 @@ set nojoinspaces
 set scrolloff=3
 set timeoutlen=0
 set showmode
-set tw=80
 set smartcase
 set smarttab
 set smartindent
