@@ -1,3 +1,4 @@
 xrandr --output DVI-1 --pos 1920x312
 feh --bg-fill ~/Pictures/hitagi/hitagi_butterfly.png
 ~/.xmodStartup
+sudo route add 149.210.147.184 gw 192.168.0.1
