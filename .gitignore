@@ -26,6 +26,7 @@
 .vim/.netrwhist
 .vim/bundle/
 .viminfo
+.ghc-mod/
 .xmonad/xmonad
 .xmonad/xmonad-x86_64-linux
 .xmonad/xmonad.errors

@@ -1,2 +1,10 @@
 xrandr --output DVI-1 --pos 1920x312
 feh --bg-fill ~/Pictures/hitagi/hitagi_butterfly.png
+xmodmap -e "keycode 108 = Alt_R"
+xmodmap -e "keycode 64 = Alt_L"
+xmodmap -e "clear mod1"
+xmodmap -e "clear mod2"
+xmodmap -e "clear mod3"
+xmodmap -e "clear mod4"
+xmodmap -e "clear mod5"
+xmodmap ~/.Xmodmap
