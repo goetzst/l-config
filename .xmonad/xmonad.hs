@@ -92,7 +92,7 @@ extraKeys =
   , ((mod4Mask,			xK_Escape), spawn "swarp 0 0")
 
   -- set keymap to us again
-  , ((mod4Mask .|. shiftMask,	xK_m), spawn "setxkbmap us")
+  , ((mod4Mask .|. shiftMask,	xK_m), spawn "~/.xmodStartup")
   ]
   -- Switch workspaces using symbols
   ++ [ ((mod4Mask .|. m, k), windows $ f i)
