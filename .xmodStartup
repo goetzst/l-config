@@ -1,9 +1,4 @@
 setxkbmap us
-xmodmap -e "keycode 108 = Alt_R"
-xmodmap -e "keycode 64 = Alt_L"
-xmodmap -e "clear mod1"
-xmodmap -e "clear mod2"
-xmodmap -e "clear mod3"
-xmodmap -e "clear mod4"
-xmodmap -e "clear mod5"
+xmodmap -e "clear Lock"
+xmodmap -e "keycode 66 = Caps_Lock NoSymbol Caps_Lock"
 xmodmap ~/.Xmodmap
