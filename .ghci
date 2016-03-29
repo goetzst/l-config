@@ -16,6 +16,7 @@
 :def k! return . (":kind! "++)
 :def data \d -> return ("data " ++ d ++ " deriving Show")
 
+:set +t
 :set prompt "\ESC[36;1mλ \ESC[m"
 -- :set prompt "λ "
 :set prompt2 "… "
