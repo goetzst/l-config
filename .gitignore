@@ -40,3 +40,9 @@ Downloads/
 Pictures/
 Progs/
 workspace/
+.gnome/
+.java/
+.octave_hist
+.rtorrent/
+.weechat/
+octave-workspace
