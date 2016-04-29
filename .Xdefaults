@@ -17,7 +17,7 @@ URxvt.url-select.button: -
 
 ! URxvt.keysym.4-c: perl:clipboard:copy
 URxvt.keysym.Control-Shift-V: perl:clipboard:paste
-Urxvt.iso14755: false
+URxvt.iso14755: false
 
 ! ???
 Xcursor.size: 16
