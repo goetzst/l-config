@@ -13,7 +13,6 @@
 .local/
 .mozilla/
 .mpv/filters/
-.mpv/input.conf
 .mpv/scripts/
 .mpv/watch_later/
 .mpv/shaders
